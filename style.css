@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: black;
+}
+.sidebar{
+    top: 0;
+    left: 0;
+    bottom:0;
+    position: fixed;
+    background: rgb(0, 0, 0);
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.sidebar .logo-nav img{
+    width: 120px;
+}
+.sidebar .logo-nav{
+    background: #121212;
+    border-radius: 10px;
+    height: 160px;
+    margin-left: 14px;
+    margin-top: 20px;
+    color: white;
+    padding: 7px 15px;
+}
+.sidebar .logo-nav ul{
+    list-style: none;
+    font-size: 20px;
+    padding: 4px 3px; 
+}
+.sidebar .logo-nav ul li{
+    text-decoration:none;
+    font-size: 22px;
+    padding-top: 7px; 
+}
+
+.logo-nav span{
+    padding-left: 10px;
+}
+.sidebar .library{
+    background: #121212;
+    border-radius: 10px;
+    height: 470px;
+    margin-left: 14px;
+    margin-top: 20px;
+    color: white;
+    padding: 15px 15px;
+}
+.sidebar .library span{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+.sidebar .library span i{
+    color: white;
+    font-size: 30px;
+}
+.sidebar .library .lib::after{
+    content: "+";
+    float: right;
+    align: center;
+    padding: 10px;
+}
+
+.scroll-div{
+    height: 180px;
+    width: 260px;
+    overflow-y: auto;
+    
+}
+
+.scroll-div::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+}
+.scroll-div::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 5px;
+
+}
+.scroll-div:hover::-webkit-scrollbar-thumb{
+    background: rgb(169, 166, 166);
+    height: 5px;  
+}
+
+.scroll-div .p1{
+    background: #1F1F1F;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.scroll-div .p1 button{
+    border-radius: 20px;
+    padding: 5px;
+    border: rgb(118, 115, 115);
+    font-weight: 600;
+    
+    
+}
+.scroll-div .p1 p{
+    font-size: 15px;
+    align-items: center;
+    padding: 10px;
+}
+.privacy{
+    padding: 20px 5px;
+}
+.privacy ul li{
+    padding-top: 10px;
+    list-style: none;
+    font-size: 14px;
+
+}
+.privacy ul li a{
+    padding-left: 10px;
+    color: rgb(151, 159, 166);
+    text-decoration: none;
+
+}
+.privacy ul li a:hover{
+    padding-left: 10px;
+    color: white;
+}
+.btn{
+    padding: 10px 10px;
+}
+.btn button{
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    background:transparent;
+    border: 1px solid white;
+    border-color: rgb(156, 157, 158);
+    color: white;
+}
+.btn button:hover{
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    border: 3px solid white;
+    border-color: rgb(156, 157, 158);
+}
+.main-section{
+    margin-left: 330px;
+    width:1200px;
+    height: 94vh;
+    border-radius: 20px;
+    top:40px;
+    position: fixed;
+    background:#111111;
+    overflow: auto;
+}
+.main-section .top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 7px 7px;
+
+}
+.top-nav .forward i{
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+}
+.top-nav .login{
+    padding-left: 5px;
+}
+.top-nav .login button{
+     width: 130px;
+     height: 40px;
+     padding: 5px;
+     border-radius: 20px;
+     font-weight: 900;
+     border: 0;
+}
+.top-nav .login #sign{
+    background: transparent;
+    color: rgb(169, 162, 162);
+
+}
+.top-nav .login #sign:hover{
+    background: transparent;
+    color: rgb(255, 255, 255);
+
+}
+
+.main-section .cards{
+    padding: 10px 20px;
+    display: flex;
+    gap: 30px;
+}
+.cards .items{
+    background: rgb(47, 46, 46);
+    width: 260px;
+    min-width: 200px;
+    border-radius: 10px;
+    padding: 10px 17px;
+    align-items: center;
+}
+.cards .items img{
+    width: 210px;
+}
+.main-section h2{
+    color: white;
+    padding:  10px;
+}
+.cards .items:hover{
+    background: rgb(65, 63, 63);
+}
+.items .play-btn{
+    position: relative;
+}
+.items i{
+    background: rgb(51, 241, 51);
+    border-radius: 100%;
+    padding: 13px;
+    position: absolute;
+    left: 160px;
+    top:-30px;
+    opacity: 0;
+}
+.items:hover .play-btn i{
+    opacity: 1;
+    transition: 0.7s ease;
+}
+.items{
+    color: white;
+}
+.items p{
+    padding: 4px;
+    color: rgb(195, 201, 206);
+}
+.footer{
+    padding: 20px 28px;
+    top: 20px;
+}
+.footer .block ul li{
+    list-style: none;
+}
+.footer{    
+    display: flex;
+    justify-content:space-between
+}
+.footer img{
+    width: 130px;
+    color: aliceblue;
+}
+.block li{
+    padding: 5px;
+    color: rgb(134, 135, 135);
+}
+.footer .block h4{
+    color: white;
+}
